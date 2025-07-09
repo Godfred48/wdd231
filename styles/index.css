@@ -83,6 +83,7 @@ h1{
 h2{
     margin-top: 0px;
     font-family: var(--heading-font);
+    text-align: center;
 }
 
 section p{
