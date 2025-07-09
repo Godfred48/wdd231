@@ -115,7 +115,7 @@ function displayCourse(course) {
      // Calculate total credit once
      const total = course.reduce((sum, c) => sum + (c.credits || 0), 0);
      const totalDisplay = document.getElementById("totalCredits");
-     totalDisplay.textContent = `Total credit for all listed courses: ${total}`;
+     totalDisplay.textContent = `Total credit for courses listed above is : ${total}`;
  
     // Get the container
     const container = document.getElementById("courseContain");
