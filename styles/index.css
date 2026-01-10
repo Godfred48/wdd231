@@ -1,0 +1,258 @@
+:root{
+    --heading-font: "Lobster Two", sans-serif;
+    --paragraph-font: "Barlow Semi Condensed", sans-serif;
+    --background-color:whitesmoke;
+    --paragraph-color: rgb(71, 182, 71);
+}
+
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 48px auto 44px;
+    align-items:center;
+    padding :20px ;
+    background-color: black;
+    font-family: var(--heading-font);
+    color:#3DADAD;
+    border-bottom: 1px solid #3DADAD;
+}
+
+header span{
+    font-size: 30px;
+}
+
+nav{
+    color:#3DADAD;
+    background-color:black;}
+
+nav ul {
+    background-color: black;
+    display:flex;
+    padding: 3px 10px;
+    list-style-type: none;
+    font-size:20px;
+    margin: 0px;
+    font-family: var(--paragraph-font);
+}
+
+nav ul li{
+    margin-left: 10px;
+    padding:3px;
+}
+nav ul li a {
+    color: #3DADAD;         /* default link color */
+    text-decoration: none;  /* remove underline */
+    display: block;         /* makes full li clickable */
+    padding: 10px;          /* optional spacing */
+}
+
+nav ul li:hover {
+    background-color: #3DADAD;
+}
+
+nav ul li:hover a {
+    color: black;
+    background-color: #3DADAD;
+    text-decoration: none;
+}
+
+main{
+    margin:0px 30px;
+}
+
+.main1{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.heading{
+    background-color:black;
+    color:#3DADAD;
+}
+
+h1{
+    font-family: var(--heading-font);
+}
+
+h2{
+    margin-top: 0px;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+section p{
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    text-align: start;
+}
+.container{
+    border:1px solid rgba(0, 0, 0, 0.541);
+}
+
+.container img{
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main2 .section3{
+    margin-top:20px;
+
+}
+
+#totalCredits{
+    text-align: center;
+}
+
+.main2{
+    display:grid;
+}
+
+footer{
+    display:grid;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    background-color: black;
+    padding:5px;
+}
+
+footer p{
+    font-family: var(--paragraph-font);
+    font-size: 15px;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+}
+
+.date p{
+    color:#3DADAD;
+}
+
+/* code for menu button */
+#menu::before{
+    content:"☰";
+}
+
+#menu.show::before{
+    content:"✖";
+}
+
+#menu{
+    display:none;
+}
+
+button{
+    background-color: black;
+    color:#3DADAD;
+    border:0;
+    font-size: 1.5rem;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-bottom: 5px;
+}
+
+.buttons button{
+    height: auto;
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+}
+
+.buttons button:hover{
+   color:black;
+   background-color: #3DADAD;
+
+}
+
+.subject{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap : 15px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+.design{
+    background-color: black;
+    color: #3DADAD;
+    border: solid;
+    height: auto;
+    width : 100%; 
+    padding: 5px 0;
+}
+
+
+@media (max-width:700px) {
+    #menu{
+        display:block;
+    }
+
+    nav ul {
+        background-color: black;
+        display:block;
+        list-style-type: none;
+        font-size:20px;
+        margin: 0px;
+        font-family: var(--paragraph-font);
+    }
+
+    #menu{
+        display:block;
+    }
+
+    #navMenu{
+        display:none;
+    }
+
+    #navMenu.show{
+        display:block
+    }
+
+    header span{
+    font-size: 25px;
+}
+    
+    
+    .main1{
+        display:grid;
+        grid-template-columns:1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav ul{
+        margin-left:0;
+        padding:0px;
+    }
+
+    .subject{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap : 15px;
+    }
+
+    section p{
+        font-family: var(--paragraph-font);
+        font-size: 18px;
+    }
+}
+

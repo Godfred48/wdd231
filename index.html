@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage for Wdd231 course project">
+    <meta name="author" content="Godfred Agbogah Yao">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Course Homepage</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="logo">
+        <span> Godfred Agbogah Yao</span>
+        <button id="menu" aria-label="Open navigation"></button>
+    </header>
+    <nav class="navigation"  id="navMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--first section cont-->
+        <h1>Home</h1>
+        <section class="main1">
+                <section class="container">
+                    <div class="heading"><h2>About Me</h2></div>
+                    <p>My name is Godfred Agbogah, and I am a dedicated and passionate student from Ghana. 
+                        I am currently enrolled in the BYU-Pathway Worldwide program, pursuing a certificate in Software Development. 
+                        With a strong interest in technology and problem-solving, I am committed to building practical skills in programming, web development,
+                        and software engineering.
+                        My goal is to become a proficient software developer capable of creating innovative digital solutions that solve real-world problems,
+                        especially within my community and beyond. I am particularly interested in areas such as full-stack web development, mobile applications, 
+                        and the integration of technology in education and healthcare.
+                        I value hard work, continuous learning, and collaboration. Outside of academics, I enjoy participating in group projects, exploring new tech tools,
+                        and contributing to initiatives that foster personal growth and community development.
+                        
+                        </p>
+                </section>
+
+                <section class="container">
+                    <div class="heading"><h2>Student Photo</h2></div>
+                    <img src="./images/profile.webp" alt="student photo" loading="lazy">
+                </section>
+        </section>
+        <section class="main2">
+                <section class="section3" id="courseContainer">
+                    <div class="heading"><h2>Web Certificate Courses</h2></div>
+                    <div class="buttons">
+                        <button onclick="filteredCourse('all')">All Courses</button>
+                        <button onclick="filteredCourse('wdd')">WDD</button>
+                        <button onclick="filteredCourse('cse')">CSE</button>
+                    </div>
+                    <div class="subject" id="courseContain"></div>
+                    <p id="totalCredits"></p>
+                </section>
+        </section>
+    </main>
+    <footer>
+        <div class="socials">
+
+            <a href="https://www.linkedin.com/in/godfred-agbogah-001559263/" target="_blank"><img src="images/linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/Godfred48" target="_blank"><img src="images/github.svg" alt="linkedin"></a>
+            <a href="" target="_blank"><img src="images/twitter-x.svg" alt="linkedin"></a>
+        </div>
+        <div class="date">
+            <p>&copy;<span id="currentyear"></span> Godfred Yao Agbogah. Accra-Ghana.</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="./scripts/date.js" defer></script>
+</body>
+</html>
