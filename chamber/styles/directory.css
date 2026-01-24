@@ -387,7 +387,8 @@ header nav{
 
     header{
         display: grid;
-        grid-template-columns: 3fr 1fr auto;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap:0px;
     }
 
     .view-toggle{
