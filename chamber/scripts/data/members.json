@@ -1,0 +1,58 @@
+{"members" : [
+  {
+    "companyName": "OmniBSIC Bank Achimota Branch",
+    "address": "29 J.A. Kufuor Avenue, Achimota, Accra, Ghana",
+    "phone": "+233 30 270 8555",
+    "website": "https://www.omnibsic.com.gh",
+    "image": "../images/omniBSIC.webp",
+    "membershipLevel": "3 (gold)"
+  },
+  {
+    "companyName": "Active Digital Brand",
+    "address": "Akweteyman Junction, Achimota-Motorway, Accra, Ghana",
+    "phone": "+233 24 000 0000",
+    "website": "https://activedigitalbrand.com",
+    "image": "active.webp",
+    "membershipLevel": "2 (silver)"
+  },
+  {
+    "companyName": "MGA Consulting Ghana Limited",
+    "address": "Achimota Petroleum, 16 22nd St, Accra, Ghana",
+    "phone": "+233 24 000 0001",
+    "website": "https://www.mgaconsultingltd.com",
+    "image": "../images/MGAconsulting.webp",
+    "membershipLevel": "2 (silver)"
+  },
+  {
+    "companyName": "MG Business Solutions",
+    "address": "No. 12, Tetteh Okulley Street, Achimota Neoplan, Accra, Ghana",
+    "phone": "+233 24 000 0002",
+    "website": "https://mgbsgh.com",
+    "image": "../images/MGbusiness.webp",
+    "membershipLevel": "1 (member)"
+  },
+  {
+    "companyName": "Chrisbill Group of Companies",
+    "address": "2nd Street Justice A. Brobbey Ave, Achimota, Accra, Ghana",
+    "phone": "+233 24 000 0003",
+    "website": "https://habadaminvestments.com",
+    "image": "../images/chrisbill.webp",
+    "membershipLevel": "1 (member)"
+  },
+  {
+    "companyName": "Verdant Global Business Solutions LTD",
+    "address": "Achimota Overhead, Accra, Ghana",
+    "phone": "+233 24 000 0004",
+    "website": "https://www.verdantglobal.org",
+    "image": "../images/global-verdat.webp",
+    "membershipLevel": "2 (silver)"
+  },
+  {
+    "companyName": "Achimota Mall",
+    "address": "Accra - Kumasi Rd, Achimota, Accra, Ghana",
+    "phone": "+233 30 000 0005",
+    "website": "http://www.achimotaretailcentre.com",
+    "image": "../images/Achimota-mall.webp",
+    "membershipLevel": "3 (gold)"
+  }
+]}
