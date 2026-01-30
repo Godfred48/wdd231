@@ -15,112 +15,115 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <meta property="og:title" content="Chamber of Commerce - Accra Ghana">
     <meta property="og:description" content="A chamber of commerce website to support and promote local businesses in Accra-Ghana">
-    <meta property="og:image" content="../images/logo.png">        
+    <meta property="og:image" content="../images/logo.webp">        
     <meta property="og:url" content="https://godfred48.github.io/wdd231/chamber/directory.html">  
     <script src="../chamber/scripts/index.js" defer></script>                                                   
     <title>Home-Motown Commerce</title>
 </head>
 <body>
-    <!--Header and nav-->
-    <header>
-        <section class="logo-section">
-             <img src="../chamber/images/logo.webp" alt="logo" loading="lazy">
-             <span>Motown Commerce</span>
-        </section>
-         <img src="../chamber/images/circle-half (1).svg" alt="circle" class="icon1">
-         <button id="menu" aria-label="Open navigation"></button>
-        <nav id="navMenu">
-            <ul>
-                <li><a href="../chamber/index.html">Home</a></li>
-                <li><a href="../chamber/directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-        </nav>
-        <img src="../chamber/images/circle-half (1).svg" alt="circle" class="icon">
-    </header>
-
-     <nav id="navvMenu">
-            <ul>
-                <li><a href="../chamber/index.html">Home</a></li>
-                <li><a href="../chamber/directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-        </nav>
-
-    <!-- Hero section -->
-    <div class="Hero">
-        <button>Join Us Today</button>
-    </div>
-
-    <span class="title"><h1>Home</h1></span>
-
-    <!--First content-->
-    <div class ="home">
-        <div class="events">
-            <section class="span1">
-                <span>EVENTS</span>
+    <main>
+        <!--Header and nav-->
+        <header>
+            <section class="logo-section">
+                <img src="../chamber/images/logo.webp" alt="logo" loading="lazy">
+                <span>Motown Commerce</span>
             </section>
-            <section >
-                <span>No events at the moment</span>
-            </section>
+            <img src="../chamber/images/circle.svg" alt="circle" class="icon1">
+            <button id="menu" aria-label="Open navigation"></button>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="../chamber/index.html">Home</a></li>
+                    <li><a href="../chamber/directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+            <img src="../chamber/images/circle-half (1).svg" alt="circle" class="icon">
+        </header>
+
+        <nav id="navvMenu">
+                <ul>
+                    <li><a href="../chamber/index.html">Home</a></li>
+                    <li><a href="../chamber/directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+
+        <!-- Hero section -->
+        <div class="Hero">
+            <button>Join Us Today</button>
+        </div>
+
+        <span class="title"><h1>Home</h1></span>
+
+        <!--First content-->
+        <div class="home">
+            <div class="events">
+                <section class="span1">
+                    <span>EVENTS</span>
+                </section>
+                <section >
+                    <span>No events at the moment</span>
+                </section>
+            </div>
+            
+            <div class="weather">
+                <section class="span2">
+                    <span>CURRENT WEATHER</span>                
+                </section>
+                <section class="weatherDetails">
+                    <img src="../chamber/images/weather.svg" alt="weather">
+                    <section id="weatherDetails"></section>
+                </section>
+            </div>
+
+            <div class="forecast">
+                <section class="span3">
+                    <span>WEATHER FORECAST</span>
+                </section>
+                <section id="forecast"></section>
+            </div>
         </div>
         
-        <div class="weather">
-            <section class="span2">
-                <span>CURRENT WEATHER</span>                
-            </section>
-            <section class="weatherDetails">
-                <img src="../chamber/images/weather.svg" alt="weather">
-                <section id="weatherDetails"></section>
-            </section>
-        </div>
-
-         <div class="forecast">
-            <section class="span3">
-                <span>WEATHER FORECAST</span>
-            </section>
-            <section id="forecast"></section>
-        </div>
-    </div>
-     
-    <!---using JS to display the businesses-->
-    <section class="view-toggle">
-        <button id="gridView" class="active"><img src="../chamber/images/grid.svg"></button>
-        <button id="listView"><img src="../chamber/images/list-task.svg"></button>
-    </section>
-    <div class="members" id="members"></div>
-
-    <!--footeer sectio-->
-    <footer class="footer-content">
-        <section class="footer1">
-            <p>Motown Commerce</p>
-            <p>P.O Box CT 1234</p>
-            <p>Accra, Ghana</p>
-            <p>info.motowncommerce.gh</p>
-            <p>(233)24-633-6753</p>
+        <!---using JS to display the businesses-->
+        <section class="view-toggle">
+            <button id="gridView" class="active"><img src="../chamber/images/grid.svg"></button>
+            <button id="listView"><img src="../chamber/images/list-task.svg"></button>
         </section>
+        <div class="members" id="members"></div>
 
-        <section class="footer2">
-            <span>
-                <a href="https://www.youtube.com/"><img src="../chamber/images/Youtube.svg" alt="youtube"></a>
-            </span>
-            <span>
-                 <a href="https://www.linkedin.com/"><img src="../chamber/images/linkedin.svg" alt="linkedin"></a>
-            </span>
-            <span>
-               <a href="https://x.com/"><img src="../chamber/images/twitter.svg" alt="twitter"></a>
-            </span>
-        </section>
 
-        <section class="footer3">
-            <p>WDD231 Class Project</p>
-            <p>Godfred Agbogah Yao</p>
-            <p>&copy; <span id="currentyear"></span> Motown Commerce</p>
-            <p id="lastModified"></p>
-        </section>
-    </footer>
+        <!--footeer sectio-->
+        <footer class="footer-content">
+            <section class="footer1">
+                <p>Motown Commerce</p>
+                <p>P.O Box CT 1234</p>
+                <p>Accra, Ghana</p>
+                <p>info.motowncommerce.gh</p>
+                <p>(233)24-633-6753</p>
+            </section>
+
+            <section class="footer2">
+                <span>
+                    <a href="https://www.youtube.com/"><img src="../chamber/images/youtube.svg" alt="youtube"></a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/"><img src="../chamber/images/linkedin.svg" alt="linkedin"></a>
+                </span>
+                <span>
+                <a href="https://x.com/"><img src="../chamber/images/twitter.svg" alt="twitter"></a>
+                </span>
+            </section>
+
+            <section class="footer3">
+                <p>WDD231 Class Project</p>
+                <p>Godfred Agbogah Yao</p>
+                <p>&copy; <span id="currentyear"></span> Motown Commerce</p>
+                <p id="lastModified"></p>
+            </section>
+        </footer>
+    </main>
 
     
     
