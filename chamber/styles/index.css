@@ -1,7 +1,7 @@
 :root {
     --background: whitesmoke;
-    --primary-color: #008738;
-    --secondary-color: #0c77b9;
+    --primary-color: #0a4221;
+    --secondary-color: #0e334b;
     --card-color:#dcdcdc;
     --font-header: 'Special Gothic Expanded One', sans-serif;
     --font-body: 'Arimo', sans-serif;
@@ -98,7 +98,7 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: end;
-    background-image: url('../images/hero1.webp');
+    background-image: url('../images/hero2.webp');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -198,6 +198,7 @@ header nav{
     padding: 10px;
     border-radius: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 .footer1{
@@ -283,7 +284,7 @@ header nav{
 .member-info p {
     margin: 4px 0 0 0;
     font-size: 0.95rem;
-    color: #555;
+    color: var(--secondary-color);
 }
 
 /* Bottom Section: Logo and Contact Details Wrapper */

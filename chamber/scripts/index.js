@@ -1,21 +1,22 @@
-    //script to dynamically set the current year in the footer
-const year = new Date().getFullYear();
-document.getElementById("currentyear").innerHTML = year;
-
-//script for the last modified date in the footer
-document.getElementById("lastModified").innerHTML = "Last Modified: " + document.lastModified;
 
 //script to fetch and display members from the JSON file
 const membersContainer = document.getElementById('members');
 const dataUrl = "./scripts/data/members.json";
+
+//function to shuffle members for random display 
+function getRandomMembers(members, count = 3) {
+  const shuffled = [...members].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
 
 async function getMembers() {
   try {
     const response = await fetch(dataUrl);
     const data = await response.json();
 
-    //display members
-    displayMembers(data.members);
+     //Randomly select member of 3.
+    const randomMembers = getRandomMembers(data.members, 3);
+    displayMembers(randomMembers);
 
   } catch (error) {
     console.error("Error loading members:", error);
@@ -52,39 +53,6 @@ function displayMembers(members) {
 
 getMembers();
 
-
-//toogle for open and close button
-const menuButton = document.querySelector("#menu");
-const navvMenu = document.querySelector("#navvMenu");
-
-//eventlistener to react to navbar on small screens 
-menuButton.addEventListener( "click", ()=>{
-    navvMenu.classList.toggle("show");
-    menuButton.classList.toggle("show");
-});
-
-
-//grid and list toogle
-const gridBtn = document.querySelector("#gridView");
-const listBtn = document.querySelector("#listView");
-const members = document.querySelector(".members");
-
-
-gridBtn.addEventListener("click", () => {
-    members.classList.remove("list-view");
-    members.classList.add("grid-view");
-
-    gridBtn.classList.add("active");
-    listBtn.classList.remove("active");
-});
-
-listBtn.addEventListener("click", () => {
-    members.classList.remove("grid-view");
-    members.classList.add("list-view");
-
-    listBtn.classList.add("active");
-    gridBtn.classList.remove("active");
-});
 
 
 
@@ -202,3 +170,39 @@ async function getForecast() {
 
 // Call function
 getForecast();
+
+
+
+
+//toogle for open and close button
+const menuButton = document.querySelector("#menu");
+const navvMenu = document.querySelector("#navvMenu");
+
+//eventlistener to react to navbar on small screens 
+menuButton.addEventListener( "click", ()=>{
+    navvMenu.classList.toggle("show");
+    menuButton.classList.toggle("show");
+});
+
+
+//grid and list toogle
+const gridBtn = document.querySelector("#gridView");
+const listBtn = document.querySelector("#listView");
+const members = document.querySelector(".members");
+
+
+gridBtn.addEventListener("click", () => {
+    members.classList.remove("list-view");
+    members.classList.add("grid-view");
+
+    gridBtn.classList.add("active");
+    listBtn.classList.remove("active");
+});
+
+listBtn.addEventListener("click", () => {
+    members.classList.remove("grid-view");
+    members.classList.add("list-view");
+
+    listBtn.classList.add("active");
+    gridBtn.classList.remove("active");
+});

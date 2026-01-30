@@ -5,7 +5,7 @@
     "phone": "+233 30 270 8555",
     "website": "https://www.omnibsic.com.gh",
     "image": "../images/omniBSIC.webp",
-    "membershipLevel": "3 (gold)"
+    "membershipLevel": "🥇"
   },
   {
     "companyName": "Active Digital Brand",
@@ -13,7 +13,7 @@
     "phone": "+233 24 000 0000",
     "website": "https://activedigitalbrand.com",
     "image": "active.webp",
-    "membershipLevel": "2 (silver)"
+    "membershipLevel": "🥈"
   },
   {
     "companyName": "MGA Consulting Ghana Limited",
@@ -21,7 +21,7 @@
     "phone": "+233 24 000 0001",
     "website": "https://www.mgaconsultingltd.com",
     "image": "../images/MGAconsulting.webp",
-    "membershipLevel": "2 (silver)"
+    "membershipLevel": "🥈"
   },
   {
     "companyName": "MG Business Solutions",
@@ -29,7 +29,7 @@
     "phone": "+233 24 000 0002",
     "website": "https://mgbsgh.com",
     "image": "../images/MGbusiness.webp",
-    "membershipLevel": "1 (member)"
+    "membershipLevel": "🥉"
   },
   {
     "companyName": "Chrisbill Group of Companies",
@@ -37,7 +37,7 @@
     "phone": "+233 24 000 0003",
     "website": "https://habadaminvestments.com",
     "image": "../images/chrisbill.webp",
-    "membershipLevel": "1 (member)"
+    "membershipLevel": "🥉"
   },
   {
     "companyName": "Verdant Global Business Solutions LTD",
@@ -45,7 +45,7 @@
     "phone": "+233 24 000 0004",
     "website": "https://www.verdantglobal.org",
     "image": "../images/global-verdat.webp",
-    "membershipLevel": "2 (silver)"
+    "membershipLevel": "🥈"
   },
   {
     "companyName": "Achimota Mall",
@@ -53,6 +53,6 @@
     "phone": "+233 30 000 0005",
     "website": "http://www.achimotaretailcentre.com",
     "image": "../images/Achimota-mall.webp",
-    "membershipLevel": "3 (gold)"
+    "membershipLevel": "🥇"
   }
 ]}
