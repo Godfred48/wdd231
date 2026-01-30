@@ -167,10 +167,11 @@ header nav{
 .weatherDetails img{
  margin-left: 10px;
 }
-.title h1 {
+.title h2 {
     margin-left:120px;
     font-family: var(--font-header);
     font-weight: bold;
+
 }
 
 .footer-content{
@@ -360,7 +361,7 @@ header nav{
         height: auto;
     }
 
-    .title h1 {
+    .title h2 {
     margin-left:20px;
     font-family: var(--font-header);
     font-weight: bold;
