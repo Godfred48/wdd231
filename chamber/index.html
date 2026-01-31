@@ -7,6 +7,7 @@
     <meta name="author" content="Godfred Agbogah Yao">
     <link rel="icon" href="../chamber/images/logo.webp" type="image/webp" >
     <link rel="stylesheet" href="../chamber/styles/index.css">
+    <link rel="stylesheet" href="../chamber/styles/indexmobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <meta property="og:title" content="Chamber of Commerce - Accra Ghana">
     <meta property="og:description" content="A chamber of commerce website to support and promote local businesses in Accra-Ghana">
-    <meta property="og:image" content="../images/logo.webp">        
+    <meta property="og:image" content="https://godfred48.github.io/wdd231/chamber/images/logo.webp">       
     <meta property="og:url" content="https://godfred48.github.io/wdd231/chamber/directory.html">  
     <script src="../chamber/scripts/index.js" defer></script>                                                   
     <title>Home-Motown Commerce</title>
@@ -24,10 +25,10 @@
     <main>
         <!--Header and nav-->
         <header>
-            <section class="logo-section">
+            <div class="logo-div">
                 <img src="../chamber/images/logo.webp" alt="logo" loading="lazy">
                 <span>Motown Commerce</span>
-            </section>
+            </div>
             <img src="../chamber/images/circle.svg" alt="circle" class="icon1">
             <button id="menu" aria-label="Open navigation"></button>
             <nav id="navMenu">
@@ -50,61 +51,61 @@
                 </ul>
             </nav>
 
-        <!-- Hero section -->
+        <!-- Hero div -->
         <div class="Hero">
             <button>Join Us Today</button>
         </div>
 
-        <span class="title"><h2>Home</h2></span>
+        <h1 class="title">Home</h1> 
 
         <!--First content-->
         <div class="home">
             <div class="events">
-                <section class="span1">
+                <div class="span1">
                     <span>EVENTS</span>
-                </section>
-                <section >
+                </div>
+                <div >
                     <span>No events at the moment</span>
-                </section>
+                </div>
             </div>
             
             <div class="weather">
-                <section class="span2">
+                <div class="span2">
                     <span>CURRENT WEATHER</span>                
-                </section>
-                <section class="weatherDetails">
+                </div>
+                <div class="weatherDetails">
                     <img src="../chamber/images/weather.svg" alt="weather">
-                    <section id="weatherDetails"></section>
-                </section>
+                    <div id="weatherDetails"></div>
+                </div>
             </div>
 
             <div class="forecast">
-                <section class="span3">
+                <div class="span3">
                     <span>WEATHER FORECAST</span>
-                </section>
-                <section id="forecast"></section>
+                </div>
+                <div id="forecast"></div>
             </div>
         </div>
         
         <!---using JS to display the businesses-->
-        <section class="view-toggle">
-            <button id="gridView" class="active"><img src="../chamber/images/grid.svg"></button>
-            <button id="listView"><img src="../chamber/images/list-task.svg"></button>
-        </section>
+        <div class="view-toggle">
+            <button id="gridView" class="active"><img src="../chamber/images/grid.svg" alt="grid"></button>
+            <button id="listView"><img src="../chamber/images/list.svg" alt="list"></button>
+        </div>
         <div class="members" id="members"></div>
 
 
         <!--footeer sectio-->
         <footer class="footer-content">
-            <section class="footer1">
+            <div class="footer1">
                 <p>Motown Commerce</p>
                 <p>P.O Box CT 1234</p>
                 <p>Accra, Ghana</p>
                 <p>info.motowncommerce.gh</p>
                 <p>(233)24-633-6753</p>
-            </section>
+            </div>
 
-            <section class="footer2">
+            <div class="footer2">
                 <span>
                     <a href="https://www.youtube.com/"><img src="../chamber/images/ytube.svg" alt="youtube"></a>
                 </span>
@@ -114,14 +115,14 @@
                 <span>
                 <a href="https://x.com/"><img src="../chamber/images/twitter.svg" alt="twitter"></a>
                 </span>
-            </section>
+            </div>
 
-            <section class="footer3">
+            <div class="footer3">
                 <p>WDD231 Class Project</p>
                 <p>Godfred Agbogah Yao</p>
                 <p>&copy; <span id="currentyear"></span> Motown Commerce</p>
                 <p id="lastModified"></p>
-            </section>
+            </div>
         </footer>
     </main>
 
