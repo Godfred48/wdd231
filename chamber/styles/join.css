@@ -23,19 +23,6 @@ body {
   color: #222;
 }
 
-.join-button a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.join-button a:visited,
-.join-button a:focus,
-.join-button a:hover,
-.join-button a:active {
-  color: inherit;
-  text-decoration: none;
-  outline: none;
-}
 
 
 main.join-container {
@@ -190,6 +177,7 @@ main.join-container {
 
 .modal-content h2 {
   font-family: var(--font-header);
+  color:var(--secondary-color);
   margin-bottom: 1rem;
 }
 
