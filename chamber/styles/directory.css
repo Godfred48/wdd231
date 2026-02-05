@@ -1,11 +1,12 @@
 :root {
     --background: whitesmoke;
-    --primary-color: #008738;
-    --secondary-color: #0c77b9;
+    --primary-color: #0a4221;
+    --secondary-color: #0e334b;
     --card-color:#dcdcdc;
     --font-header: 'Special Gothic Expanded One', sans-serif;
     --font-body: 'Arimo', sans-serif;
 }
+
 
 body{
     margin :0;

@@ -1,3 +1,11 @@
+    //script to dynamically set the current year in the footer
+const year = new Date().getFullYear();
+document.getElementById("currentyear").innerHTML = year;
+
+//script for the last modified date in the footer
+document.getElementById("lastModified").innerHTML = "Last Modified: " + document.lastModified;
+
+
 
 //script to fetch and display members from the JSON file
 const membersContainer = document.getElementById('members');
