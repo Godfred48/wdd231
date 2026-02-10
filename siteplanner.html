@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VoyageCast – Site Plan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&family=Playwrite+NZ:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       Color Scheme
+       ========================= */
+    :root {
+      --primary-color: #1f3c88;   /* Deep Blue */
+      --secondary-color: #f4a261; /* Warm Sand */
+      --background-color: #f9fafb;
+      --text-color: #333333;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Playwrite NZ", serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h1, h2, h3 {
+      font-family: "Open Sans", sans-serif;
+      color: var(--primary-color);
+    }
+
+    h1 {
+      color: white;
+      margin: 0;
+    }
+
+    h2 {
+      border-left: 5px solid var(--secondary-color);
+      padding-left: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .color-box {
+      display: inline-block;
+      width: 120px;
+      height: 40px;
+      margin-right: 1rem;
+      border-radius: 6px;
+    }
+
+    .primary {
+      background-color: var(--primary-color);
+    }
+
+    .secondary {
+      background-color: var(--secondary-color);
+    }
+
+    .wireframe {
+      border: 2px dashed var(--primary-color);
+      padding: 1rem;
+      margin-top: 1rem;
+      background-color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+    <img src="./images/logo.png" alt="logo" loading="lazy" style="width: 150px; height:100px;">
+  <h1>VoyageCast – Travel Planner Website</h1>
+  <p>Site Plan Document</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Site Name</h2>
+    <p><strong>VoyageCast</strong></p>
+    <p>
+      VoyageCast combines “Voyage” (travel and exploration) with “Cast” (forecast),
+      reflecting the website’s purpose of delivering travel-focused weather insights.
+    </p>
+    <p><strong>Optional Domain:</strong> voyagecast.travel</p>
+  </section>
+
+  <section>
+    <h2>Site Purpose</h2>
+    <p>
+      VoyageCast provides travelers with accurate weather information and essential
+      travel resources for destinations worldwide, helping users prepare effectively
+      before traveling.
+    </p>
+  </section>
+
+  <section>
+    <h2>Scenarios</h2>
+    <ul>
+      <li>What will the weather be like in Tokyo over the next five days?</li>
+      <li>Where can I find trusted booking links after checking my destination’s climate?</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Color Scheme</h2>
+    <p><strong>Primary – Deep Blue (#1f3c88):</strong> Used for headings, navigation, and
+      structural elements.</p>
+    <div class="color-box primary"></div>
+
+    <p><strong>Secondary – Warm Sand (#f4a261):</strong> Used for buttons, highlights,
+      and accents.</p>
+    <div class="color-box secondary"></div>
+  </section>
+
+  <section>
+    <h2>Typography</h2>
+    <ul>
+      <li><strong>Open Sans:</strong> Headings and titles</li>
+      <li><strong>Playwrite New Zealand:</strong> Body text and descriptive content</li>
+    </ul>
+  </section>
+
+    <section>
+  <h2>Wireframe</h2>
+  <div class="wireframe-image">
+    <img src="./images/wireframe.png" 
+         alt="VoyageCast Wireframe – Mobile & Desktop Views" 
+         style="width:100%; max-width:900px; display:block; margin:auto; border:2px dashed var(--primary-color);">
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <p>WDD231 • Site Plan • VoyageCast</p>
+</footer>
+
+</body>
+</html>
