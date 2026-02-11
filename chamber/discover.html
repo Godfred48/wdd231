@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Accra - Attractions, culture and business opportunities.">
+    <meta name="author" content="Godfred Agbogah Yao">
+
+    <link rel="icon" href="images/logo.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/indexmobile.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <meta property="og:title" content="Chamber of Commerce - Accra Ghana">
+    <meta property="og:description" content="A chamber of commerce website to support and promote local businesses in Accra-Ghana">
+    <meta property="og:image" content="https://godfred48.github.io/wdd231/chamber/images/logo.webp">       
+    <meta property="og:url" content="https://godfred48.github.io/wdd231/chamber/discovery.html">  
+    <!-- Module script -->
+    <script type="module" src="../chamber/scripts/discover.js" defer></script>
+    <!-- Keep your main JS for nav toggle -->
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+
+    <title>Discover - Motown Commerce</title>
+</head>
+
+<body>
+
+    <!-- ===== HEADER (UNCHANGED STRUCTURE) ===== -->
+    <header>
+        <div class="logo-div">
+            <img src="images/logo.webp" alt="logo" loading="lazy">
+            <span>Motown Commerce</span>
+        </div>
+
+        <img src="images/circle.svg" alt="circle" class="icon1">
+
+        <button id="menu" aria-label="Open navigation"></button>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="../chamber/index.html">Home</a></li>
+                <li><a href="../chamber/directory.html">Directory</a></li>
+                <li><a href="../chamber/join.html">Join</a></li>
+                <li><a href="../chamber/discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+        <img src="images/circle.svg" alt="circle" class="icon">
+    </header>
+         
+            <!-- SECOND NAV (PRESERVED) -->
+            <nav id="navvMenu">
+                <ul>
+                    <li><a href="../chamber/index.html">Home</a></li>
+                    <li><a href="../chamber/directory.html">Directory</a></li>
+                    <li><a href="../chamber/join.html">Join</a></li>
+                    <li><a href="../chamber/discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        <main class="main">
+            <!-- PAGE TITLE -->
+            <h1 class="title">Discover Motown</h1>
+
+            <!-- VISITOR MESSAGE -->
+            <section id="visitMessage" class="visit-message"></section>
+
+            <!-- DISCOVER GRID -->
+            <section class="discover-grid" id="discoverContainer"></section>
+        </main>
+    <!-- ===== FOOTER (UNCHANGED STRUCTURE) ===== -->
+    <footer class="footer-content">
+        <div class="footer1">
+            <p>Motown Commerce</p>
+            <p>P.O Box CT 1234</p>
+            <p>Accra, Ghana</p>
+            <p>info.motowncommerce.gh</p>
+            <p>(233)24-633-6753</p>
+        </div>
+
+        <div class="footer2">
+            <span>
+                <a href="https://www.youtube.com/">
+                    <img src="images/ytube.svg" alt="youtube">
+                </a>
+            </span>
+            <span>
+                <a href="https://www.linkedin.com/">
+                    <img src="images/linkedin.svg" alt="linkedin">
+                </a>
+            </span>
+            <span>
+                <a href="https://x.com/">
+                    <img src="images/twitter.svg" alt="twitter">
+                </a>
+            </span>
+        </div>
+
+        <div class="footer3">
+            <p>WDD231 Class Project</p>
+            <p>Godfred Agbogah Yao</p>
+            <p>&copy; <span id="currentyear"></span> Motown Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

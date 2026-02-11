@@ -1,0 +1,129 @@
+:root {
+    --background: whitesmoke;
+    --primary-color: #0a4221;
+    --secondary-color: #0e334b;
+    --card-color:#dcdcdc;
+    --font-header: 'Special Gothic Expanded One', sans-serif;
+    --font-body: 'Arimo', sans-serif;
+}
+
+
+.main{
+    margin: 0 0px;
+}
+
+/* Visitor message */
+.visit-message {
+    max-width: 70rem;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: var(--card-color);
+    font-family: var(--font-body);
+    border-left: 6px solid var(--primary-color);
+}
+
+/* Discover Grid Base */
+.discover-grid {
+    display: grid;
+    justify-content: center; /* centers the entire grid horizontally */
+    gap: 20px;
+    max-width: 70rem;
+    margin: 10px auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Card Styling */
+.discover-card {
+    display: flex;
+    flex-direction: column; /* stack h2, img, address, p vertically */
+    justify-content: center; /* vertical alignment inside card */
+    align-items: center; /* horizontal alignment inside card */
+    text-align: center; /* optional for text inside */
+    background-color: var(--card-color);
+    padding: 10px;
+    height: 400px;
+    border: 1px solid #b5b5b5;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.discover-card h2 {
+    font-family: var(--font-header);
+    color: var(--primary-color);
+}
+
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.place {
+    font-family: var(--font-header);
+    color: var(--primary-color);
+}
+
+.place-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+figure{
+    margin :30px 30px;
+}
+
+.address ,.description {
+    font-family: var(--font-body);
+    color: #333;
+}
+/* Hover effect (NOT mobile) */
+@media (min-width: 641px) {
+    .discover-card img:hover {
+        transform: scale(1.05);
+        transition: 0.3s ease;
+        filter: brightness(1.1);
+    }
+
+   
+}
+
+/* SMALL SCREENS */
+@media (max-width: 640px) {
+    .discover-grid {
+        grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    }
+
+}
+
+/* MEDIUM SCREENS */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+
+    figure{
+    margin-left :10px;
+}
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 card8";
+    }
+}
