@@ -15,6 +15,7 @@ places.forEach((place, index) => {
     </figure>
     <address class="address">${place.address}</address>
     <p class="description">${place.description}</p>
+    <button class="learn-btn">Learn More</button>
   `;
 
   container.appendChild(card);

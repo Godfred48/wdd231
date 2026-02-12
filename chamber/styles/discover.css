@@ -12,6 +12,39 @@
     margin: 0 0px;
 }
 
+.learn-btn {
+    margin-top: auto; /* pushes button to bottom if card is flex */
+    padding: 0.6rem 1.2rem;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect (non-mobile only) */
+@media (min-width: 641px) {
+    .learn-btn:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-2px);
+    }
+}
+
+/* Click effect */
+.learn-btn:active {
+    transform: scale(0.98);
+}
+
+/* Focus state for accessibility */
+.learn-btn:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
 /* Visitor message */
 .visit-message {
     max-width: 70rem;
@@ -41,7 +74,7 @@
     text-align: center; /* optional for text inside */
     background-color: var(--card-color);
     padding: 10px;
-    height: 400px;
+    height: 500px;
     border: 1px solid #b5b5b5;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
