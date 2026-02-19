@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VoyageCast - Your Ultimate travel commpanion and planner.">
+    <meta name="author" content="Godfred Agbogah Yao">
+    <link rel="icon" href="../finalproject/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="../finalproject/style/index.css">
+    <link rel="stylesheet" href="../finalproject/style/about.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&family=Playwrite+NZ:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta property="og:title" content="VoyageCast - Your Ultimate travel commpanion and planner.">
+    <meta property="og:description" content="VoyageCast is your ultimate travel companion and planner. Discover new destinations, plan your trips, and make unforgettable memories.">
+    <meta property="og:image" content="https://godfred48.github.io/wdd231/finalproject/image/logo.png">
+    <meta property="og:url" content="https://godfred48.github.io/wdd231/finalproject/index.html">       
+    <script src="./script/index.js" defer></script>  
+    <script src="./script/basic.js" defer></script>                                              
+    <title>About-VoyageCast</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+       <div class="logo-div">
+            <img src="../finalproject/image/logo.png" alt="logo" loading="lazy">
+            <span class="title">VoyageCast</span>
+             <button id="menu" aria-label="Open navigation"></button>
+        </div>
+        <!--NAVIGATION-->
+        <nav class="desktopNav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./explore.html">Explore & Plan</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+        </nav>
+            <button class="dealbutton" onclick="window.location.href='./deals.html'">
+  Get Travel Deal
+</button>
+    </header>
+      <nav class="mobileNav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./explore.html">Explore & Plan</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+          <button  class="dealbutton" onclick="window.location.href='./deals.html'">
+  Get Travel Deal
+</button>
+
+        </nav>
+        <main>
+         <div class="aboutcontainer">
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <h1>About VoyageCast</h1>
+        <p>Your Ultimate Travel Companion & Planner</p>
+    </section>
+
+    <!-- Story Section -->
+    <section class="about-story">
+        <div class="story-text">
+            <h2>Our Story</h2>
+            <p>
+                VoyageCast was created with one mission — to make travel planning simple,
+                inspiring, and unforgettable. Whether you're exploring a new country,
+                checking the weather, or booking your next adventure, we help you plan
+                with confidence.
+            </p>
+            <p>
+                We believe travel is more than destinations — it’s about experiences,
+                memories, and stories that last a lifetime.
+            </p>
+        </div>
+        <div class="story-image">
+            <img src="../finalproject/image/explore23.webp" alt="Travel Image">
+        </div>
+    </section>
+
+    <!-- Mission Cards -->
+    <section class="about-values">
+        <div class="value-card">
+            <h3>🌍 Our Mission</h3>
+            <p>To empower travelers with reliable information, smart tools, and seamless planning.</p>
+        </div>
+
+        <div class="value-card">
+            <h3>✨ Our Vision</h3>
+            <p>To become the go-to digital companion for modern explorers worldwide.</p>
+        </div>
+
+        <div class="value-card">
+            <h3>💡 Our Promise</h3>
+            <p>Clear insights, accurate forecasts, and smooth booking experiences — every time.</p>
+        </div>
+    </section>
+
+</div>
+
+        </main>
+       
+        <!--footeer sectio-->
+        <footer class="footer-content">
+            <div class="footer1">
+                <p>VoyageCast</p>
+                <p>P.O Box CT 1234</p>
+                <p>Accra, Ghana</p>
+                <p>info.voyagecast.gh</p>
+                <p>(233)24-633-6753</p>
+            </div>
+
+            <div class="footer2">
+                <span>
+                    <a href="https://www.youtube.com/"><img src="../chamber/images/ytube.svg" alt="youtube"></a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/"><img src="../chamber/images/linkedin.svg" alt="linkedin"></a>
+                </span>
+                <span>
+                <a href="https://x.com/"><img src="../chamber/images/twitter.svg" alt="twitter"></a>
+                </span>
+            </div>
+
+            <div class="footer3">
+                <p>WDD231 Final Project</p>
+                <p>Godfred Agbogah Yao</p>
+                <p>&copy; <span id="currentyear"></span> VoyageCast</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+</body>
+</html>

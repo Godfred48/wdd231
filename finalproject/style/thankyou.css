@@ -1,0 +1,29 @@
+
+:root{
+    --primary-color: #1f3c88;
+    --secondary-color: #f4a261;
+    --header-font: 'Opens sans', sans-serif;
+    --body-font : "Playwrite NZ", serif;
+}
+
+
+
+.thankyou-section {
+    padding: 80px 20px;
+    text-align: center;
+    font-family: var(--body-font);
+}
+
+.home-btn {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: var(--header-font);
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color:var(--primary-color) ;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.home-btn:hover {
+    background: var(--secondary-color);
+    color: white;}

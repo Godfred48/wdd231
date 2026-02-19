@@ -1,0 +1,289 @@
+:root {
+  --primary-color: #1f3c88;
+  --secondary-color: #f4a261;
+  --header-font: 'Open Sans', sans-serif;
+  --body-font: "Playwrite NZ", serif;
+}
+/* HERO 1 */
+.hero1{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../image/hero000.webp") ;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    place-items: center;
+}
+
+.hero1{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../image/hero000.webp") ;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    padding : 10px;
+}
+
+.hero1 .title {
+   font-family: var(--header-font);
+    color : whitesmoke;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.hero1 p {
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    color : white;
+    margin : 0;
+    margin-top: -30px;
+}
+
+/* search button */
+.search-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search-field {
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.search-field:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.search-section button {
+    background-color: var(--primary-color);
+    padding : 10px 20px;
+    border : none;
+    border-radius: 15px;
+    color :whitesmoke;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-family: var(--body-font);
+    width: 150px;
+}
+
+.search-section button:hover {
+    background-color: var(--secondary-color);
+}  
+/* 
+.booking-section {
+    display : flex;
+    gap : 20px;
+    width :500px;
+    height : auto;
+    padding : 15px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin : 20px;
+    border : 1px solid var(--secondary-color);
+    box-shadow: 0 6px 20px var(--secondary-color);
+    background-color: whitesmoke;
+}
+
+.booking-section h2 {
+      font-family: var(--header-font);
+      font-size: 1.8rem;
+}
+
+.booking-section button {
+    background-color: var(--primary-color);
+    padding : 10px 20px;
+    border : none;
+    border-radius: 15px;
+    color :whitesmoke;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-family: var(--body-font);
+}
+
+/* .booking-section .bookButton {
+    marginn
+} */
+/* 
+.bookingImage img{
+    width : 250px;
+    height : 250px;
+    object-fit: cover;
+    border-radius : 15px;
+} */ 
+
+.weatherForcast {
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+.weather-card {
+  background: rgb(214, 212, 212);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.weather-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.weather-icon {
+  font-size: 6rem;
+  display: block;
+  margin: 1rem 0;
+}
+
+
+.weekly-forecast {
+  background: rgb(214, 212, 212);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-family: var(--body-font);
+}
+
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+.day-card {
+  background: var(--primary-color);
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+  color: whitesmoke;
+}
+
+.day-card span {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.day-card:hover {
+  background: var(--secondary-color);
+  color: white;
+  transform: translateY(-5px);
+}
+
+.travelTips {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.travel-tip-card {
+  background: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  font-family: var(--body-font);
+}
+
+.travel-tip-card h3 {
+  margin-bottom: 1rem;
+}
+
+.travel-tip-card ul {
+  padding-left: 1.2rem;
+}
+
+.travel-tip-card li {
+  margin-bottom: 0.5rem;
+}
+
+
+.booking-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.bookButton h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.bookButton button {
+  display: block;
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: var(--header-font);
+}
+
+.bookButton button:hover {
+  background: var(--secondary-color);
+}
+
+.bookingImage img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+
+@media (max-width: 768px) {
+
+  .hero1 {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero1 .title {
+    font-size: 2rem;
+  }
+
+  .hero1 p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+
+   .booking-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .bookButton button {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  .bookingImage {
+    order: -1; /* optional: image on top */
+  }
+
+}
+
+
+

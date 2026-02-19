@@ -1,0 +1,29 @@
+.form-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input {
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+}
+form button:hover {
+    background: var(--secondary-color);
+}

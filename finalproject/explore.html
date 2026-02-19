@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VoyageCast - Your Ultimate travel commpanion and planner.">
+    <meta name="author" content="Godfred Agbogah Yao">
+    <link rel="icon" href="../finalproject/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="../finalproject/style/index.css">
+    <link rel="stylesheet" href="../finalproject/style/explore.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&family=Playwrite+NZ:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta property="og:title" content="VoyageCast - Your Ultimate travel commpanion and planner.">
+    <meta property="og:description" content="VoyageCast is your ultimate travel companion and planner. Discover new destinations, plan your trips, and make unforgettable memories.">
+    <meta property="og:image" content="https://godfred48.github.io/wdd231/finalproject/image/logo.png">
+    <meta property="og:url" content="https://godfred48.github.io/wdd231/finalproject/index.html">                                                       
+    <title>Explore-VoyageCast</title>
+    <script src="./script/explore.js" defer></script>
+    <script src="./script/basic.js" defer></script>
+</head>
+<body>
+      <!--HEADER-->
+    <header>
+       <div class="logo-div">
+            <img src="../finalproject/image/logo.png" alt="logo" loading="lazy">
+            <span class="title">VoyageCast</span>
+             <button id="menu" aria-label="Open navigation"></button>
+        </div>
+        <!--NAVIGATION-->
+        <nav class="desktopNav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./explore.html">Explore & Plan</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+        </nav>
+           <button class="dealbutton" onclick="window.location.href='./deals.html'">
+  Get Travel Deal
+</button>
+    </header>
+     <nav class="mobileNav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./explore.html">Explore & Plan</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+          <button class="dealbutton" onclick="window.location.href='./deals.html'">
+  Get Travel Deal
+</button>
+
+        </nav>
+        <main>
+            <!--HERO SECTION-->
+            <div class="hero1">
+                <h1 class="title">Find Weather & Travel Info</h1>
+                <p>Search any country or city to get up-to-date weather 
+                 forcast and travel tips
+                </p>
+
+                <div class="search-section">
+                    <input type="search" class="search-field" id="searchinput" placeholder="Enter a country or city">
+                    <button id="searchButton">Search</button>
+                </div>
+            </div>
+           
+            <!-- FORECAST SECTION -->
+             <div class="weatherForcast" id="weatherForcast"></div>
+       
+
+                <!--booking section-->
+
+                     <!-- Travel Tips -->
+                    <div class="travelTips" id="TravelTips"></div>
+
+                    <div class="booking-section">
+                        <div class="bookButton">
+                            <h2>Book Your Trip</h2>
+                            <button><a href="#"></a></a>Book Flight</button>
+                            <button><a href="#"></a></a>See Hotels</button>
+                        </div>
+                        <div class="bookingImage">
+                            <img src="./image/explore23.webp" alt="booking dynamic image">
+                        </div>
+                    </div>
+
+                    <!--Recommended Hotel Name-->
+                    <div class="recommendedHotel" id="recommendedHotel"></div>
+        </main>
+       
+        <!--footeer sectio-->
+        <footer class="footer-content">
+            <div class="footer1">
+                <p>VoyageCast</p>
+                <p>P.O Box CT 1234</p>
+                <p>Accra, Ghana</p>
+                <p>info.voyagecast.gh</p>
+                <p>(233)24-633-6753</p>
+            </div>
+
+            <div class="footer2">
+                <span>
+                    <a href="https://www.youtube.com/"><img src="../chamber/images/ytube.svg" alt="youtube"></a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/"><img src="../chamber/images/linkedin.svg" alt="linkedin"></a>
+                </span>
+                <span>
+                <a href="https://x.com/"><img src="../chamber/images/twitter.svg" alt="twitter"></a>
+                </span>
+            </div>
+
+            <div class="footer3">
+                <p>WDD231 Final Project</p>
+                <p>Godfred Agbogah Yao</p>
+                <p>&copy; <span id="currentyear"></span> VoyageCast</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+</body>
+</html>

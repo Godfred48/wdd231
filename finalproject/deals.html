@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VoyageCast - Your Ultimate travel commpanion and planner.">
+    <meta name="author" content="Godfred Agbogah Yao">
+    <link rel="icon" href="../finalproject/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="../finalproject/style/index.css">
+    <link rel="stylesheet" href="../finalproject/style/about.css">
+    <link rel="stylesheet" href="../finalproject/style/deals.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&family=Playwrite+NZ:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta property="og:title" content="VoyageCast - Your Ultimate travel commpanion and planner.">
+    <meta property="og:description" content="VoyageCast is your ultimate travel companion and planner. Discover new destinations, plan your trips, and make unforgettable memories.">
+    <meta property="og:image" content="https://godfred48.github.io/wdd231/finalproject/image/logo.png">
+    <meta property="og:url" content="https://godfred48.github.io/wdd231/finalproject/index.html">       
+    <script src="./script/index.js" defer></script>  
+    <script src="./script/basic.js" defer></script> 
+    <script src="./script/deals.js" defer></script>                                             
+    <title>Deals-VoyageCast</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+       <div class="logo-div">
+            <img src="../finalproject/image/logo.png" alt="logo" loading="lazy">
+            <span class="title">VoyageCast</span>
+             <button id="menu" aria-label="Open navigation"></button>
+        </div>
+        <!--NAVIGATION-->
+        <nav class="desktopNav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./explore.html">Explore & Plan</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+        </nav>
+             <button class="dealbutton" onclick="window.location.href='./deals.html'">
+  Get Travel Deal
+</button>
+    </header>
+  <nav class="mobileNav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./explore.html">Explore & Plan</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+          <button class="dealbutton" onclick="window.location.href='./deals.html'">
+  Get Travel Deal
+</button>
+
+        </nav>
+
+
+
+                <section class="deals-section">
+    <h1 class="deals-title">Exclusive Travel Deals</h1>
+
+    <div class="deals-grid">
+
+        <!-- Deal 1 -->
+        <div class="deal-card" data-deal="Paris Escape - 5 Days in Paris with hotel & breakfast included.">
+            <img src="../finalproject/image/explore23.webp" alt="Paris">
+            <h3>Paris Escape</h3>
+            <p>5 Days • 4 Nights</p>
+            <span>$899</span>
+            <button onclick="" class="deal-btn">View Details</button>
+        </div>
+
+        <!-- Deal 2 -->
+        <div class="deal-card" data-deal="Dubai Luxury Trip - 6 Days with desert safari & Burj Khalifa tour.">
+            <img src="../finalproject/image/explore23.webp" alt="Dubai">
+            <h3>Dubai Luxury</h3>
+            <p>6 Days • 5 Nights</p>
+            <span>$1299</span>
+            <button class="deal-btn" >View Details</button>
+        </div>
+
+        <!-- Deal 3 -->
+        <div class="deal-card" data-deal="Bali Relaxation - 7 Days resort stay with spa access.">
+            <img src="../finalproject/image/explore23.webp" alt="Bali">
+            <h3>Bali Retreat</h3>
+            <p>7 Days • 6 Nights</p>
+            <span>$999</span>
+            <button class="deal-btn">View Details</button>
+        </div>
+
+        <!-- Deal 4 -->
+        <div class="deal-card" data-deal="New York City Break - 4 Days central hotel stay.">
+            <img src="../finalproject/image/explore23.webp" alt="NYC">
+            <h3>NYC Explorer</h3>
+            <p>4 Days • 3 Nights</p>
+            <span>$799</span>
+            <button class="deal-btn">View Details</button>
+        </div>
+
+        <!-- Deal 5 -->
+        <div class="deal-card" data-deal="Cape Town Adventure - 5 Days with safari experience.">
+            <img src="../finalproject/image/explore23.webp" alt="Cape Town">
+            <h3>Cape Town Adventure</h3>
+            <p>5 Days • 4 Nights</p>
+            <span>$950</span>
+            <button class="deal-btn">View Details</button>
+        </div>
+
+        <!-- Deal 6 -->
+        <div class="deal-card" data-deal="Tokyo Discovery - 6 Days cultural & city tour.">
+            <img src="../finalproject/image/explore23.webp" alt="Tokyo">
+            <h3>Tokyo Discovery</h3>
+            <p>6 Days • 5 Nights</p>
+            <span>$1199</span>
+            <button class="deal-btn">View Details</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="dealModal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <a href="deal-form.html" class="interest-btn">I'm Interested</a>
+    </div>
+</div>
+
+
+        <!--footeer sectio-->
+        <footer class="footer-content">
+            <div class="footer1">
+                <p>VoyageCast</p>
+                <p>P.O Box CT 1234</p>
+                <p>Accra, Ghana</p>
+                <p>info.voyagecast.gh</p>
+                <p>(233)24-633-6753</p>
+            </div>
+
+            <div class="footer2">
+                <span>
+                    <a href="https://www.youtube.com/"><img src="../chamber/images/ytube.svg" alt="youtube"></a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/"><img src="../chamber/images/linkedin.svg" alt="linkedin"></a>
+                </span>
+                <span>
+                <a href="https://x.com/"><img src="../chamber/images/twitter.svg" alt="twitter"></a>
+                </span>
+            </div>
+
+            <div class="footer3">
+                <p>WDD231 Final Project</p>
+                <p>Godfred Agbogah Yao</p>
+                <p>&copy; <span id="currentyear"></span> VoyageCast</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+</body>
+</html>
